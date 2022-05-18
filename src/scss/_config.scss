@@ -1,0 +1,27 @@
+// Bootstrap utilities
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  wxp: 1440px,
+  wxpp: 1600px,
+  fhd: 1920px,
+  qhd: 2560px,
+);
+@import "node_modules/bootstrap/scss/mixins/_breakpoints.scss";
+@import "node_modules/bootstrap/scss/bootstrap-grid.scss";
+
+@mixin font($fname, $fstyle, $fweight, $furl) {
+  @font-face {
+    font-family: $fname;
+    font-style: $fstyle;
+    font-weight: $fweight;
+    font-display: swap;
+    src: url("#{$furl}.ttf"), url("#{$furl}.woff"), url("#{$furl}.woff2");
+  }
+}
+
+// Пример
+// @include font("Roboto", normal, 400, "@fonts/Roboto-Medium");
