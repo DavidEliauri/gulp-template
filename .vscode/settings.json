@@ -1,0 +1,8 @@
+{
+  "path-autocomplete.pathMappings": {
+    "@img": "${folder}/src/assets/images", // alias for images
+    "@fonts": "${folder}/src/assets/fonts", // alias for fonts
+    "@scss": "${folder}/src/style/scss", // alias for scss
+    "@js": "${folder}/src/js" // alias for js
+  }
+}
